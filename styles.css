@@ -107,13 +107,13 @@ img {
  
 /* Handle */
 .timeline::-webkit-scrollbar-thumb {
-    background: #5aa7d4;
+    background: #1976D2;
     border-radius: 2.5px; 
 }
 
 /* Handle on hover */
 .timeline::-webkit-scrollbar-thumb:hover {
-    background: #1976D2; 
+    background: #5aa7d4;
 }
 .precontent {
     position: relative;
@@ -241,6 +241,7 @@ a.active:hover {
     font-weight: bold;
     float: left;
     padding-left: 20px;
+    margin-top: 10px;
     margin-bottom: 0;
 }
 .cardmore:hover{
@@ -470,7 +471,7 @@ a.active:hover {
     background-color: rgba(0,0,0,0.8);
 }  
 /* The dots/bullets/indicators */
-.slideshow-dots .dot1, .slideshow-dots .dot2, .slideshow-dots .dot3, .slideshow-dots .dot4 {
+.slideshow-dots .dot1, .slideshow-dots .dot2, .slideshow-dots .dot3, .slideshow-dots .dot4, .slideshow-dots .dot5 {
     cursor: pointer;
     height: 10px;
     width: 10px;
@@ -482,7 +483,7 @@ a.active:hover {
     transition: background-color 0.6s ease;
     transition: height 0.2s;
 } 
-.slideshow-dots .active, .slideshow-dots .dot1:hover, .slideshow-dots .dot2:hover, .slideshow-dots .dot3:hover, .slideshow-dots .dot4:hover {
+.slideshow-dots .active, .slideshow-dots .dot1:hover, .slideshow-dots .dot2:hover, .slideshow-dots .dot3:hover, .slideshow-dots .dot4:hover, .slideshow-dots .dot5:hover {
     background-color: #2196F3;
     height: 15px;
     width: 15px;
