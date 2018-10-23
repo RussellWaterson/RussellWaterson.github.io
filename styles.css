@@ -207,8 +207,19 @@ a.active:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.5s;
 }
+.cardquickaccess {
+    background-color: #f1f1f1;
+    padding: 5px;
+    margin-top: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+}
 .card:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.cardquickaccess:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
 }
 .card p {
     line-height: 1.5;
@@ -219,12 +230,23 @@ a.active:hover {
     padding-top: 0px;
     padding-bottom: 10px;
 }
+.cardquickaccess h3 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
 .card i {
     float: right;
     margin-right: 25px;
     margin-top: 10px;
     font-size: 28px;
     color: grey;
+}
+.cardquickaccess i {
+    float: left;
+    margin: 15px;
+    margin-right: 20px;
+    font-size: 28px;
+    color: black;
 }
 .card i:hover{
     color: black;
@@ -278,6 +300,15 @@ a.active:hover {
     float: left;
     width: 50%;
     padding: 0 10px;
+}
+.columnquickaccess {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+.columnquickaccess a {
+    text-decoration: none;
+    color: black;
 }
 /* Clear floats after the columns */
 .row:after {
@@ -527,6 +558,12 @@ a.active:hover {
     color: black;
 }
 
+/* For smaller screens: */
+@media screen and (max-width: 1050px) {
+    .columnquickaccess {
+        width: 50%;
+    }
+}
 
 /* For mobile phones: */
 /* ☰ */
@@ -609,6 +646,9 @@ a.active:hover {
 @media screen and (max-width: 460px) {
     .precontent h1 {
         padding-top: 10px;
+    }
+    .columnquickaccess {
+        width: 100%;
     }
 }
 
